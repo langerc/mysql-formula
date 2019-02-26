@@ -3,10 +3,10 @@
 
 Debian:
     {% if salt['grains.get']('osmajorrelease')|int >= 9 %}
-  serverpkg: mariadb-server
-  service: mariadb
-  clientpkg: mariadb-client
-  devpkg: libmariadbclient-dev
+  serverpkg: mysql-server
+  service: mysqldb
+  clientpkg: mysql-client
+  devpkg: libmysqlclient-dev
     {% else %}
   devpkg: libmysqlclient-dev
     {% endif %}
