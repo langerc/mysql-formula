@@ -3,9 +3,9 @@
 
 Debian:
     {% if salt['grains.get']('osmajorrelease')|int >= 9 %}
-  serverpkg: mysql-server-5.7
+  serverpkg: mysql-server-8.0
   service: mysqldb
-  clientpkg: mysql-client-5.7
+  clientpkg: mysql-client-8.0
   devpkg: libmysqlclient-dev
     {% else %}
   devpkg: libmysqlclient-dev
