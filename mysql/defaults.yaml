@@ -4,7 +4,7 @@ mysql:
   serverpkg: mysql-server
   clientpkg: mysql-client
   service: mysql
-  pythonpkg: python-mysqldb
+  pythonpkg: python3-mysqldb
   devpkg: mysql-devel
   debconf_utils: debconf-utils
 
